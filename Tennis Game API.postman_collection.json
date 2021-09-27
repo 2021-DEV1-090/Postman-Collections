@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "b635c869-73ae-46ab-90e0-ed96007f339c",
+		"name": "Tennis Game API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Score a point for player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scorer\": \"Player 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tennis-game/1/score",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tennis-game",
+						"1",
+						"score"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quit game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tennis-game/1/quit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tennis-game",
+						"1",
+						"quit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"playerOne\": \"Player 1\",\n    \"playerTwo\": \"Player 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tennis-game/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tennis-game",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
